@@ -1,0 +1,49 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js build
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\BharatM\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-15\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\php7;C:\ProgramData\ComposerSetup\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Ruby24-x64\bin;C:\Ruby25\bin;C:\Users\BharatM\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2\bin;C:\Program Files\JetBrains\RubyMine 2019.2\bin;C:\Users\BharatM\AppData\Local\Yarn\bin;C:\Users\BharatM\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Users\BharatM\AppData\Local\Programs\Fiddler;C:\Program Files\heroku\bin;C:\Users\BharatM\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\RubyMine 2018.3.5\bin;C:\Program Files (x86)\GitHub CLI\;C:\Users\BharatM\AppData\Roaming\Composer\vendor\bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\BharatM\Projects\exp\context-issue\packages\lib1\package.json: Unexpected token } in JSON at position 354
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:304:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "@context-issue/lib1",
+    "version": "1.0.0",
+    "main": "dist/index.js",  
+    "author": "Bharat Mhaskar",
+    "license": "MIT",
+    "useWorkspaces": true,
+    "scripts": {
+      "build": "rimraf dist && cross-env NODE_ENV=production webpack --config webpack.config.js"
+    }, 
+    "devDependencies": {
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+    },
+    "peerDependencies": {
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

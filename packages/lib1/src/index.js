@@ -5,7 +5,7 @@ const Lib1Context = React.createContext();
 Lib1Context.displayName = 'Lib 1';
 
 const Lib1state = ({ children }) => {
-    return (<Lib1Context.Provider values={{ defaut: "value1" }}>
+    return (<Lib1Context.Provider value={{ default: "value1" }}>
         {children}
     </Lib1Context.Provider>)
 }

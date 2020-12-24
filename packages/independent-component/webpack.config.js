@@ -72,6 +72,7 @@ module.exports = {
             commonjs2: 'react',
             amd: 'react',
         },
+        '@context-issue/lib1': '@context-issue/lib1',
         'react-dom': {
             root: 'ReactDOM',
             commonjs2: 'react-dom',
